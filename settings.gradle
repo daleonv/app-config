@@ -1,0 +1,3 @@
+rootProject.name = 'technical-test-back'
+
+include 'microservice-gatewai', 'microservice-eureka', 'microservice-config'
