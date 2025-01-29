@@ -1,3 +1,7 @@
 rootProject.name = 'technical-test-back'
 
-include 'microservice-gatewai', 'microservice-eureka', 'microservice-config'
+include 'microservice-gateway',
+        'microservice-eureka',
+        'microservice-config',
+        'microservice-person',
+        'microservice-account'
