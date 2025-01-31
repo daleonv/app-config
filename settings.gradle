@@ -1,7 +1,4 @@
-rootProject.name = 'technical-test-back'
+rootProject.name = 'app-config'
 
 include 'microservice-gateway',
-        'microservice-eureka',
-        'microservice-config',
-        'microservice-person',
-        'microservice-account'
+        'microservice-eureka'
