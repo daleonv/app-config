@@ -11,13 +11,16 @@ ENV TZ=America/Guayaquil
 ENV LANG C.UTF-8
 
 # Expone el puerto en el que la aplicación escucha
-EXPOSE 8761
+EXPOSE 8080
 
 # Establece el directorio de trabajo
 WORKDIR /api
 
 # Copia el archivo JAR generado al contenedor
 COPY build/libs/*SNAPSHOT.jar /api/app.jar
+
+# Definir la variable de entorno por defecto
+ENV SPRING_PROFILES_ACTIVE=docker
 
 # Ejecuta la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]

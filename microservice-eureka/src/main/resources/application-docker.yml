@@ -1,0 +1,6 @@
+eureka:
+  instance:
+    hostname: host.docker.internal
+  client:
+    service-url:
+      default-zone: http://host.docker.internal:${server.port}/eureka/

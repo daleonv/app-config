@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: msvc-gateway
+
   cloud:
     gateway:
       routes:
@@ -15,9 +16,8 @@ spring:
           uri: lb://APP-PROCEDURE
           predicates:
             - Path=/procedure/**
+
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: true
-    service-url:
-      default-zone: http://host.docker.internal:8761/eureka/
