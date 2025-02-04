@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: host.docker.internal
+    hostname: microservice-eureka
   client:
     service-url:
-      default-zone: http://host.docker.internal:${server.port}/eureka/
+      defaultZone: http://microservice-eureka:8761/eureka/

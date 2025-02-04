@@ -9,15 +9,15 @@ spring:
     gateway:
       routes:
         - id: person
-          uri: lb://APP-PERSON
+          uri: lb://MSVC-PERSON
           predicates:
             - Path=/person/**
         - id: procedure
-          uri: lb://APP-PROCEDURE
+          uri: lb://MSVC-PROCEDURE
           predicates:
             - Path=/procedure/**
 
 eureka:
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    register-with-eureka: true
+    fetch-registry: true

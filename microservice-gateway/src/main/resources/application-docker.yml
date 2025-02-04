@@ -6,4 +6,4 @@ spring:
 eureka:
   client:
     service-url:
-      default-zone: http://host.docker.internal:8761/eureka/
+      defaultZone: http://microservice-eureka:8761/eureka/
